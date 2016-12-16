@@ -1,5 +1,7 @@
 import test from 'ava';
 import Alidayu from '../lib/sms';
+import AmqpConnection from '../lib/rabbitmq'
+
 
 const clientOption = {
   'appkey': '23569268',
@@ -16,23 +18,16 @@ const smsOption = {
   'sms_template_code': 'SMS_34335476'
 }
 
-let alidayu;
+let amqpConnection;
 test.before(t => {
   // this runs before all tests
-  alidayu = new Alidayu(clientOption, smsOption);
+//  alidayu = new Alidayu(clientOption, smsOption);
+  amqpConnection = new AmqpConnection('amqp://localhost', {clientOption, smsOption});
 
 });
 
 
-
-
-test('sms should ok', async t => {
-  const res = await alidayu.send({
-    tel: "18123050081",//电话
-    code: '小军，你sb'  //模板参数
-  })
-
-  t.true(res.result.success, true);
-
-
+test('amqpConnection connect ok', async t => {
+  let res = await amqpConnection.connect();
+  t.pass();
 });
