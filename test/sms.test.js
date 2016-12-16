@@ -28,8 +28,8 @@ test.before(t => {
 
 test('sms should ok', async t => {
   const res = await alidayu.send({
-    tel: "18055482913",//电话
-    code: 'sb'  //模板参数 
+    tel: "13162991611",//电话
+    code: 'sb'  //模板参数
   })
 
   t.true(res.result.success, true);
