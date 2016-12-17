@@ -1,8 +1,7 @@
 # mdc-sms-alidayu
 ![](https://img.shields.io/badge/node-%3E%3Dv6.9.2-blue.svg)
 ![](https://img.shields.io/badge/test-2%2F2-green.svg)  
-## introduction  
----  
+## introduction   
 集成了[Rabbitmq](https://github.com/squaremo/amqp.node)和alidayu,使用者仅需传入mq和alidayu配置,
 调用该包的publish和consume方法,即可实现:发送队列消息;消费队列消息并且发送短信,无需关心如何监听mq服务以及发送短信的过程。
 
