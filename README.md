@@ -52,14 +52,15 @@
  * exchange mq的exchange name
  * routingKey 路由key
  * msg 发送消息(应配合alidayu的短信模版发送消息)
- * type exchange类别:
-   *       fanout:把所有发送到该Exchange的消息路由到所有与它绑定的Queue中。
-   *       direct:把消息路由到那些binding key与routing key完全匹配的Queue中。
-   *       topic: topic类型的Exchange在匹配规则上进行了扩展，它与direct类型的Exchage相似，也是将消息路由到binding key与routing key相匹配的Queue中，但这里的匹配规则有些不同，它约定：
+ * type exchange类别:  
+
+      *       fanout:把所有发送到该Exchange的消息路由到所有与它绑定的Queue中。
+      *       direct:把消息路由到那些binding key与routing key完全匹配的Queue中。
+      *       topic: topic类型的Exchange在匹配规则上进行了扩展，它与direct类型的Exchage相似，也是将消息路由到binding key与routing key相匹配的Queue中，但这里的匹配规则有些不同，它约定：
               *   routing key为一个句点号"."分隔的字符串（我们将被句点号"."分隔开的每一段独立的字符串称为一个单词），如"stock.usd.nyse"、"nyse.vmw"、"quick.orange.rabbit"
               *   binding key与routing key一样也是句点号". "分隔的字符串
               *  binding key中可以存在两种特殊字符" * "和"#"，用于做模糊匹配，其中前面一个用于匹配一个单词，"#"用于匹配多个单词（可以是零个）
-   *       headers:headers类型的Exchange不依赖于routing key与binding key的匹配规则来路由消息，而是根据发送的消息内容中的headers属性进行匹配。
+      *       headers:headers类型的Exchange不依赖于routing key与binding key的匹配规则来路由消息，而是根据发送的消息内容中的headers属性进行匹配。
  *  option
 
 2. consume(exchange, queue, bindingkey, type, option)  
@@ -83,5 +84,5 @@
 
 >[Rabbitmq-study](https://github.com/shadow88sky/Rabbitmq-study)  
 >[rabbitmq](http://www.rabbitmq.com)  
->[amqp](https://github.com/squaremo/amqp.node)
+>[amqp](https://github.com/squaremo/amqp.node)  
 >[阿里大于API详情](https://api.alidayu.com/doc2/apiDetail.htm?spm=a3142.8062534.3.1.bNEw4j&apiId=25450)
