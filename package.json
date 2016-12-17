@@ -1,5 +1,5 @@
 {
-  "name": "mdcsms",
+  "name": "amqpsms",
   "version": "1.0.0",
   "description": "mdc-sms-alidayu",
   "main": "index.js",
