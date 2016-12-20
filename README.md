@@ -13,7 +13,7 @@
 ## Quick Start
 ```javascript
     //consume
-    const AmqpConnection = require('amqpsms')
+    const AmqpConnection = require('mdc-sms-alidayu')
 
     const clientOption = {
       'appkey': '',//阿里大于appkey
@@ -30,8 +30,8 @@
 
 
 
-    let amqpConnection = new AmqpConnection('amqp://localhost', { clientOption, smsOption });
-    amqpConnection.consume('test exchange', 'sms queue', 'sms', 'direct'); //consume
+    let amqpConnection = new AmqpConnection('amqp://localhost');
+    amqpConnection.consume({ clientOption, smsOption },'test exchange', 'sms queue', 'sms', 'direct'); //consume
 
 
     //publish

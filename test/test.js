@@ -17,9 +17,9 @@ const smsOption = {
 
 let amqpConnection;
 test.before(async t => {
-  amqpConnection = new AmqpConnection('amqp://localhost', { clientOption, smsOption });
+  amqpConnection = new AmqpConnection('amqp://localhost');
   let status = await amqpConnection.connect();
-  amqpConnection.consume('test exchange', 'sms queue', 'sms', 'direct'); //consume
+  amqpConnection.consume({ clientOption, smsOption }, 'test exchange', 'sms queue', 'sms', 'direct'); //consume
 });
 
 
@@ -35,9 +35,9 @@ test('publish msg', async t => {
 
 //settimeout because connet rabbitmq need some time
 let sleep = function (time) {
-    return new Promise(function (resolve, reject) {
-        setTimeout(function () {
-            resolve();
-        }, time);
-    })
+  return new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      resolve();
+    }, time);
+  })
 };
