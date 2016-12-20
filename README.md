@@ -1,4 +1,4 @@
-# mdc-sms-alidayu
+# airplake-mdc-sms-alidayu
 ![](https://img.shields.io/badge/node-%3E%3Dv6.9.2-blue.svg)
 ![](https://img.shields.io/badge/test-2%2F2-green.svg)  
 ## introduction   
@@ -7,13 +7,13 @@
 
 ## install
 
-    npm install mdc-sms-alidayu --save
+    npm install airplake-mdc-sms-alidayu --save
 
 
 ## Quick Start
 ```javascript
     //consume
-    const AmqpConnection = require('mdc-sms-alidayu')
+    const AmqpConnection = require('airplake-mdc-sms-alidayu')
 
     const clientOption = {
       'appkey': '',//阿里大于appkey
