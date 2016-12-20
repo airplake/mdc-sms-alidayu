@@ -1,7 +1,7 @@
 {
-  "name": "mdc-sms-alidayu",
-  "version": "1.0.0",
-  "description": "mdc-sms-alidayu",
+  "name": "airplake-mdc-sms-alidayu",
+  "version": "1.0.1",
+  "description": "airplake-mdc-sms-alidayu",
   "main": "index.js",
   "directories": {
     "test": "test"
