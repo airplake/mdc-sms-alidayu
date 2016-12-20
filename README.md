@@ -7,7 +7,7 @@
 
 ## install
 
-    npm install amqpsms --save
+    npm install mdc-sms-alidayu --save
 
 
 ## Quick Start
