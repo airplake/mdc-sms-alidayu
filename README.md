@@ -11,8 +11,23 @@
 
 
 ## Quick Start
-```javascript
-    //consume
+
+### Publish Side
+
+```
+    const AmqpConnection = require('amqpsms')
+
+    let amqpConnection = new AmqpConnection('amqp://localhost');
+    amqpConnection.publish('test exchange', 'sms', JSON.stringify({
+      tel: "XXXX",//短信接收号码
+      code: 'hello world'  //短信模板变量
+    }), 'direct');
+```
+
+
+### Consumer Side
+
+```
     const AmqpConnection = require('airplake-mdc-sms-alidayu')
 
     const clientOption = {
@@ -28,22 +43,10 @@
       'sms_template_code': ''//短信模板ID
     }
 
-
-
     let amqpConnection = new AmqpConnection('amqp://localhost');
     amqpConnection.consume({ clientOption, smsOption },'test exchange', 'sms queue', 'sms', 'direct'); //consume
-
-
-    //publish
-    const AmqpConnection = require('amqpsms')
-
-
-    let amqpConnection = new AmqpConnection('amqp://localhost');
-    amqpConnection.publish('test exchange', 'sms', JSON.stringify({
-      tel: "XXXX",//短信接收号码
-      code: 'hello world'  //短信模板变量
-    }), 'direct');
 ```
+
 ## API
 
 1. publish(exchange, routingKey, msg, type, option)
