@@ -25,6 +25,7 @@
   "homepage": "https://github.com/airplake/mdc-sms-alidayu#readme",
   "dependencies": {
     "amqplib": "^0.5.1",
+    "moment": "^2.17.1",
     "urllib": "^2.19.0"
   },
   "devDependencies": {
