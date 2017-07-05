@@ -1,0 +1,31 @@
+Arguments: 
+  D:\lib\nodejs\node.exe D:\Program Files (x86)\Yarn\bin\yarn.js init
+
+PATH: 
+  C:\Users\Wy\bin;D:\Program Files\Git\mingw64\bin;D:\Program Files\Git\usr\local\bin;D:\Program Files\Git\usr\bin;D:\Program Files\Git\usr\bin;D:\Program Files\Git\mingw64\bin;D:\Program Files\Git\usr\bin;C:\Users\Wy\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;D:\Program Files\Git\cmd;D:\lib\nodejs;D:\phpStudy\php\php-7.0.12-nts;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\dotnet;C:\Program Files (x86)\Skype\Phone;D:\Program Files (x86)\Yarn\bin;D:\lib\windows-amd64;C:\go\bin;D:\Python27;E:\Android\android-sdk\tools;C:\Users\Wy\AppData\Local\atom;D:\Program Files (x86)\Lua\5.1;D:\Program Files (x86)\Lua\5.1\clibs;E:\Android\android-sdk;C:\Program Files\Java\jre1.8.0_131\bin;E:\Android\android-sdk\platform-tools;C:\Users\Wy\AppData\Local\Microsoft\WindowsApps;C:\Users\Wy\AppData\Roaming\npm;D:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Wy\.babun;C:\Users\Wy\AppData\Local\Yarn\bin;C:\Users\Wy\AppData\Local\atom\bin;D:\Program Files (x86)\OpenVPN\bin;G:\project\otc\AntShares.VM\src\AntShares.Compiler.MSIL\bin\Release\PublishOutput;D:\Program Files\Git\usr\bin\vendor_perl;D:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  0.24.6
+
+Node version: 
+  7.10.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Can't answer a question unless a user TTY
+      at ConsoleReporter.question (D:\Program Files (x86)\Yarn\lib\yarn-cli.js:78027:59)
+      at Object.<anonymous> (D:\Program Files (x86)\Yarn\lib\yarn-cli.js:73818:38)
+      at Generator.next (<anonymous>)
+      at step (D:\Program Files (x86)\Yarn\lib\yarn-cli.js:91:30)
+      at D:\Program Files (x86)\Yarn\lib\yarn-cli.js:102:13

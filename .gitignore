@@ -1,2 +1,9 @@
+node_modules
+test/_conf.js
 
-node_modules/*
+#yarn
+yarn.lock
+yarn-error.log
+
+#.vscode
+.vscode
